@@ -4,7 +4,7 @@ FROM gcr.io/cloud-builders/bazel
 ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes
 
 RUN apt update && \
-    apt install -qy gosu && \
+    apt install -qy gosu tzdata && \
     groupadd -r mysql && \
     useradd -r -g mysql mysql && \
     mkdir /var/lib/mysql-files && \

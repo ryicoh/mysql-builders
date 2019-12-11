@@ -8,4 +8,4 @@ build-go:
 
 .PHONY: build-bazel
 build-bazel:
-	@REGISTRY=$(REGISTRY) REPOSITORY=$(REPOSITORY) TAG=$(TAG) scripts/build_go.sh
+	@REGISTRY=$(REGISTRY) REPOSITORY=$(REPOSITORY) TAG=$(TAG) scripts/build_bazel.sh

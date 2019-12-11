@@ -2,7 +2,7 @@
 
 /entrypoint.sh mysqld &
 
-for i in `seq 1 10`
+for i in `seq 1 20`
 do
   mysqladmin ping && \
     exec "$@" && \
@@ -11,4 +11,5 @@ do
   sleep 1
 done
 
-echo "mysql did not start within 10 seconds"
+echo "mysql did not start within 20 seconds"
+exit 1
